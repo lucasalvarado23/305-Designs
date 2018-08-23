@@ -41,9 +41,8 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('contact').addEventListener('submit', function(event) {
+            document.getElementById('contact-test').addEventListener('submit', function(event) {
                 event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
                 emailjs.sendForm('contact_service', 'contact_template', this);
             });
         }
@@ -262,7 +261,7 @@
 
 
 <!-- Contact Section -->
-<div id="contact" class="text-center">
+<div id="contact-test" class="text-center">
   <div class="container">
     <div class="section-title center">
       <h2>Let us know what you need</h2>
